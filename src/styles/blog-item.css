@@ -1,6 +1,7 @@
 .blog__item {
   border: 5px solid #7c8a972e;
-  height: 180vh;
+  height: 120vh;
+
 }
 
 .blog__time {
@@ -22,8 +23,8 @@
   color: #f9a826;
 }
 .blogimg{
- 
-  height: 450px;
+
+  height: 400px;
 
 }
 .blogimg img{

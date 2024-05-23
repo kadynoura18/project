@@ -22,7 +22,9 @@ const CarDetails = () => {
         <Container>
           <Row>
             <Col lg="6">
-              <div className="imagge"><img src={singleCarItem.imgUrl} alt="" className="w-100" /></div>
+              <div  style={{border:"2px solid red"}}>
+                <img src={singleCarItem.imgUrl} alt="" className="w-100" />
+                </div>
             </Col>
 
             <Col lg="6">
@@ -36,11 +38,11 @@ const CarDetails = () => {
 
                   <span className=" d-flex align-items-center gap-2">
                     <span style={{ color: "#f9a826" }}>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </span>
                     ({singleCarItem.rating} ratings)
                   </span>

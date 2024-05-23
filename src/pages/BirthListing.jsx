@@ -4,13 +4,15 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import BirthItem from "../components/UI/BirthItem";
 import birthData from "../assets/data/birthData";
-
+import { useSelector } from "react-redux";
+import Cart from "../components/UI/Cart";
 
 const BirthListing = () => {
+  const canIViewCart=useSelector((state)=> state.shoppingCart.isCartVisible)
   return (
     <Helmet title="Birth">
       <CommonSection title="liste des services d'anniversaire" />
-
+      {canIViewCart && <Cart/> }
       <section>
         <Container>
           <Row>

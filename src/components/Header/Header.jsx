@@ -2,7 +2,15 @@ import React, { useRef } from "react";
 import logo from "../../assets/all-images/cars-img/logo.png";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
+import ShoppingCartSlice from "../../store/Shopping-cart-slice";
 import "../../styles/header.css";
+import { useDispatch, useSelector } from "react-redux";
+import { UseDispatch } from "react-redux";
+import { ShoppingCartAction } from "../../store/Shopping-cart-slice";
+import Panier from "../UI/Panier"
+
+
+
 
 const navLinks = [
   {
@@ -29,6 +37,13 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const CarLength=useSelector((state)=>state.shoppingCart.items.length)
+
+  const dispatch= useDispatch()
+  const handleClick=()=>{
+    dispatch(ShoppingCartAction.toggleCartView())
+  }
+
   const date = new Date();
   const menuRef = useRef(null);
 
@@ -44,7 +59,7 @@ const Header = () => {
               <div className="header__top__left">
                 <span>Besoin d'aide?</span>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +225 01 41 89 86 59 / 07 77 05 23 17 
+                  <i className="ri-phone-fill"></i> +225 01 41 89 86 59 / 07 77 05 23 17 
                 </span>
               </div>
             </Col>
@@ -52,11 +67,11 @@ const Header = () => {
             <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
                 <Link to="/sign" className=" d-flex align-items-center gap-1">
-                  <i class="ri-login-circle-line"></i> Connexion
+                  <i className="ri-login-circle-line"></i> Connexion
                 </Link>
-
+                <Panier></Panier>
                 <Link to="/inscription" className=" d-flex align-items-center gap-1">
-                  <i class="ri-user-line"></i> Inscription
+                  <i className="ri-user-line"></i> Inscription
                 </Link>
                 <div> {/* ===============profile =========== */}</div>
               </div>
