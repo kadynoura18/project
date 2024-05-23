@@ -2,13 +2,6 @@
   border: 3px solid #7c8a9736;
   padding: 10px;
   border-radius: 5px;
-<<<<<<< Updated upstream
-=======
-  
- 
-  
-  
->>>>>>> Stashed changes
 }
 
 .car__item-info span i {
@@ -57,26 +50,6 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
-<<<<<<< Updated upstream
-
-=======
-.reserver{
- 
-  color: white;
-}
-.car__img{
-  
-  height: 300px;
-  width: 100%;
-}
-.car__img img{
-  height: 100%;
-  width: 100%;
-}
-.reine{
-  border: 90px solid red;
-}
->>>>>>> Stashed changes
 @media only screen and (max-width: 992px) {
   .car__item h4 {
     font-size: 1.1rem;
