@@ -43,16 +43,17 @@ const Footer = () => {
                 <Link to="/home" className=" d-flex align-items-center gap-2">
                  <img src={logo} alt="" />
                   <span>
-                  Service <br />  d'o'ganisation de céremonie
+                  Service <br />  d'organisation de céremonie
                   </span>
                 </Link>
               </h1>
             </div>
             <p className="footer__logo-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur, distinctio, itaque reiciendis ab cupiditate harum ex
-              quam veniam, omnis expedita animi quibusdam obcaecati mollitia?
-              Delectus et ad illo recusandae temporibus?
+🌸 Transformez vos rêves en réalité avec EventPlaner2024! 🌸
+Vous préparez un mariage, un anniversaire, une cérémonie de remise de diplômes ou tout autre événement spécial ? 
+Laissez-nous vous aider à créer des moments inoubliables ! 🎉
+ Nous comprenons que chaque détail compte. C'est pourquoi nous vous proposons un service d'organisation de cérémonie sur mesure, 
+ qui répondra à toutes vos attentes.
             </p>
           </Col>
 

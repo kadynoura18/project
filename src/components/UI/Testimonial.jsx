@@ -3,10 +3,11 @@ import Slider from "react-slick";
 
 import "../../styles/testimonial.css";
 
-import ava01 from "../../assets/all-images/ava-1.jpg";
+import ava01 from "../../assets/all-images/loraine.jpg";
 import ava02 from "../../assets/all-images/ava-2.jpg";
 import ava03 from "../../assets/all-images/ava-3.jpg";
 import ava04 from "../../assets/all-images/ava-4.jpg";
+import { height } from "@mui/system";
 
 const Testimonial = () => {
   const settings = {
@@ -42,17 +43,18 @@ const Testimonial = () => {
     <Slider {...settings}>
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        <p className="section__description">
+        Mon expérience avec l' application était  satisfaisante.Les prix sint abordable
+        et les prestataire accueillants et bienveillants.         </p>
+          
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava01} alt="" className="w-25 h-25 rounded-2" />
+          <img src={ava01} alt="" className="w-25 h-25 rounded-2"/>
+       
 
-          <div>
-            <h6 className="mb-0 mt-3">Affroumou Ado</h6>
+          <div>  
+            <h6 className="mb-0 mt-3">lorene</h6>
             <p className="section__description">Informaticien</p>
           </div>
         </div>
@@ -60,12 +62,13 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        Mon expérience avec l' application était globalement satisfaisante. L'application
+         offrais plusieurs fonctionnalités utiles pour mon evenement, 
+           les notifications en temps réel. Cependant, j'ai rencontré 
+         quelques problèmes de lenteur et  pendant son utilisation, ce qui a affecté légèremenT
+          mon expérience. Malgré ces inconvénients, l'application a contribué à faciliter mon l'événement. ?
         </p>
-
+ 
         <div className="mt-3 d-flex align-items-center gap-4">
           <img src={ava02} alt="" className="w-25 h-25 rounded-2" />
 
@@ -78,28 +81,27 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+          j'ai tester l appkication
+          lorsque de devais organiser l anniversaire supprise de mon petit ami je me suis laisse guide par votre wedingplanner.
+           l anniversaire etait spectaculaire j etait trop satisfaite,
+          mon petit ami aussi je vous remercie eventplaner une fois eventplaner toujour?
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
           <img src={ava03} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Gbane Karamoko </h6>
-            <p className="section__description">Footballeur</p>
+            <h6 className="mb-0 mt-3"> KLA DIO YVE</h6>
+            <p className="section__description">secretaire</p>
           </div>
         </div>
       </div>
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+          Apres avoire utilse votre service je suis tres satisfaite vos prestataire en plus d'etre performant,acceuillant et respectueux
+          Avec un qualite de prix favorable votre application ma permis de realise un mariage de reve pour ma fille .je reviendrais lorsque j'aurais encore un evenement je vous le conseil eventplaner
+          ?
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">

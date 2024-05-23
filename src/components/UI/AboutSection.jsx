@@ -20,12 +20,9 @@ const AboutSection = ({ aboutClass }) => {
               <h4 className="section__subtitle">À propos de nous</h4>
               <h2 className="section__title">Bienvenue au service d'organisation de cérémonie de Envent Planer</h2>
               <p className="section__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatum blanditiis esse accusantium dignissimos labore
-                laborum. Veniam, corporis mollitia temporibus, in quaerat vero
-                deleniti amet dolorem repudiandae, pariatur nam dolore! Impedit
-                neque sit ad temporibus quam similique dolor ipsam praesentium
-                sunt.
+              Vous rêvez d'une cérémonie parfaite ? Que ce soit pour un mariage, un anniversaire, une fête d'entreprise ou tout 
+              autre événement spécial,
+               Eventplaner est là pour transformer vos rêves en réalité.
               </p>
 
               <div className="about__section-item d-flex align-items-center">
