@@ -31,15 +31,7 @@ const CarItem = ({item}) => {
         </h6>
 
         <div className="car__item-info d-flex align-items-center justify-content-between mt-3 mb-4">
-          <span className=" d-flex align-items-center gap-1">
-            <i className="ri-car-line"></i> {item.model}
-          </span>
-          <span className=" d-flex align-items-center gap-1">
-            <i className="ri-settings-2-line"></i> {item.automatic}
-          </span>
-          <span className=" d-flex align-items-center gap-1">
-            <i className="ri-timer-flash-line"></i> {item.speed}
-          </span>
+         
         </div>
 
         <button className="reserver w-50 car__item-btn car__btn-rent" onClick={handleClick}>

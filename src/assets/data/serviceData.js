@@ -8,9 +8,9 @@ const serviceData = [
 
   {
     id: 2,
-    title: "Whole  City Tour",
+    title: "Tenus",
     icon: "ri-community-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "Lorsqu'il s'agit de se préparer pour une cérémonie spéciale, que ce soit un mariage,anniversaire ou un autre, nos stylyste se retrouve dans une collection remarquable de tenues de cérémonie pour homme, femme et enfant. Découvrez les choix élégants disponibles dans cette sélection qui met en avant l'esprit rock qui vous caractérise.",
   },
 
   {
@@ -22,9 +22,9 @@ const serviceData = [
 
   {
     id: 4,
-    title: "Fast & Easy Booking",
+    title: "Logistiques",
     icon: "ri-timer-flash-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "Faites confiance à AudioPro, votre partenaire sonorisation.Que ce soit pour une conférence, un concert, un mariage ou toute autre occasion,notre équipe d'experts saura vous proposer la solution sonore adaptée.",
   },
 
   {
