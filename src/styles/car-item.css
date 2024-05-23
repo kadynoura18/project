@@ -2,6 +2,7 @@
   border: 3px solid #7c8a9736;
   padding: 10px;
   border-radius: 5px;
+  border: 2px solid red;
 }
 
 .car__item-info span i {
@@ -10,7 +11,13 @@
 }
 .car__img {
  
-  height:100px;
+  height:300px;
+  border: 3px solid blue;
+
+}
+.car__img img{
+  height: 100%;
+  width: 100%;
 }
 .car__img img{
   height: 100%;
