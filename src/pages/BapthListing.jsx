@@ -4,20 +4,23 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import BapthItem from "../components/UI/BapthItem";
 import bapthData from "../assets/data/bapthData ";
-
+import Cart from "../components/UI/Cart";
+import { useSelector } from "react-redux";
 
 const BapthListing = () => {
+  const canIViewCart=useSelector((state)=> state.shoppingCart.isCartVisible)
   return (
     <Helmet title="Birth">
-      <CommonSection title="liste des services d'anniversaire" />
-
+   
+      <CommonSection title="liste des services de baptème" />
+     {canIViewCart && <Cart/> }
       <section>
         <Container>
           <Row>
             <Col lg="12">
               <div className=" d-flex align-items-center gap-3 mb-5">
                 <span className=" d-flex align-items-center gap-2">
-                  <i class="ri-sort-asc"></i> Sort By
+                  <i className="ri-sort-asc"></i> Sort By
                 </span>
 
                 <select>

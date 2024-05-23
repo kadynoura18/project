@@ -4,27 +4,20 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import CarItem from "../components/UI/CarItem";
 import carData from "../assets/data/carData";
+import { useSelector } from "react-redux";
+import Cart from "../components/UI/Cart";
 
 const CarListing = () => {
+  const canIViewCart=useSelector((state)=> state.shoppingCart.isCartVisible)
   return (
     <Helmet title="issa">
       <CommonSection title="liste des services de mariage" />
-
+      {canIViewCart && <Cart/> }
       <section>
         <Container>
           <Row>
             <Col lg="12">
-              <div className=" d-flex align-items-center gap-3 mb-5">
-                <span className=" d-flex align-items-center gap-2">
-                  <i class="ri-sort-asc"></i> Trier par
-                </span>
-
-                <select>
-                  <option>Selectionner</option>
-                  <option value="low">Low to High</option>
-                  <option value="high">High to Low</option>
-                </select>
-              </div>
+              reche
             </Col>
 
             {carData.map((item) => (
