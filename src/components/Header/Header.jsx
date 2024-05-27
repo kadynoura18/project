@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import logo from "../../assets/all-images/";
+import logo from "../../assets/all-images/logoe.jpg";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import ShoppingCartSlice from "../../store/Shopping-cart-slice";
