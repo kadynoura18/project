@@ -11,7 +11,7 @@ import img08 from "../all-images/cars-img/mercedes-offer.png";
 const carData = [
   {
     id: 1,
-    brand: "Marina",
+    intitué: "organisateur de bapt",
     rating: 112,
     carName: " Malibu",
     imgUrl: img01,
@@ -24,7 +24,7 @@ const carData = [
 
   {
     id: 2,
-    brand: "Carolle",
+    intitué: "organisateur de mariage",
     rating: 102,
     carName: "Carolle",
     imgUrl: img02,
@@ -37,7 +37,7 @@ const carData = [
 
   {
     id: 3,
-    brand: "Lola",
+    intitué: "organisateur d'anniversaire ",
     rating: 132,
     carName: "kevina",
     imgUrl: img03,
@@ -53,7 +53,7 @@ const carData = [
 
   {
     id: 4,
-    brand: "Emmanuella",
+    intitué: "organisateur de Baptême",
     rating: 102,
     carName: " Merciela",
     imgUrl: img04,
@@ -69,7 +69,7 @@ const carData = [
 
   {
     id: 5,
-    brand: "Ferrari",
+    intitué: "organisateur de mariage",
     rating: 94,
     carName: " Camry",
     imgUrl: img05,

@@ -11,7 +11,7 @@ import img08 from "../all-images/cars-img/mercedes-offer.png";
 const birthData = [
   {
     id: 1,
-    brand: "Tesla",
+    intitulé: "Tesla",
     rating: 112,
     carName: "Tesla Malibu",
     imgUrl: img01,
@@ -24,7 +24,7 @@ const birthData = [
 
   {
     id: 2,
-    brand: "Toyota",
+    intitulé: "Toyota",
     rating: 102,
     carName: "Toyota Aventador",
     imgUrl: img02,
@@ -37,7 +37,7 @@ const birthData = [
 
   {
     id: 3,
-    brand: "BMW",
+    intitulé: "BMW",
     rating: 132,
     carName: "BMW X3",
     imgUrl: img03,
@@ -53,7 +53,7 @@ const birthData = [
 
   {
     id: 4,
-    brand: "Nissan",
+    intitulé: "Nissan",
     rating: 102,
     carName: "Nissan Mercielago",
     imgUrl: img04,
@@ -69,7 +69,7 @@ const birthData = [
 
   {
     id: 5,
-    brand: "Ferrari",
+    intitulé: "Ferrari",
     rating: 94,
     carName: "Ferrari Camry",
     imgUrl: img05,
@@ -85,7 +85,7 @@ const birthData = [
 
   {
     id: 6,
-    brand: "Mercedes",
+    intitulé: "Mercedes",
     rating: 119,
     carName: "Mercedes Benz XC90",
     imgUrl: img06,
@@ -101,7 +101,7 @@ const birthData = [
 
   {
     id: 7,
-    brand: "Audi",
+    intitulé: "Audi",
     rating: 82,
     carName: "Audi Fiesta",
     imgUrl: img07,
@@ -117,7 +117,7 @@ const birthData = [
 
   {
     id: 8,
-    brand: "Colorado",
+    intitulé: "Colorado",
     rating: 52,
     carName: "Rolls Royce Colorado",
     imgUrl: img08,

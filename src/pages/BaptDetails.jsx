@@ -35,13 +35,7 @@ const BaptDetails = () => {
                   </h6>
 
                   <span className=" d-flex align-items-center gap-2">
-                    <span style={{ color: "#f9a826" }}>
-                      <i className="ri-star-s-fill"></i>
-                      <i className="ri-star-s-fill"></i>
-                      <i className="ri-star-s-fill"></i>
-                      <i className="ri-star-s-fill"></i>
-                      <i className="ri-star-s-fill"></i>
-                    </span>
+                    
                     ({singleCarItem.rating} ratings)
                   </span>
                 </div>

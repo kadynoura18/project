@@ -54,3 +54,6 @@
     font-size: 40px;
 }
  
+.one :hover{
+background-color: red;
+}

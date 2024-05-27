@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { UseDispatch } from "react-redux";
 import { ShoppingCartAction } from "../../store/Shopping-cart-slice";
 import Panier from "../UI/Panier"
+import Profile from "../UI/Profile"
 
 
 
@@ -66,13 +67,15 @@ const Header = () => {
 
             <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-                <Link to="/sign" className=" d-flex align-items-center gap-1">
+                <Link to="/sign" className=" d-flex align-items-center gap-1 ">
                   <i className="ri-login-circle-line"></i> Connexion
                 </Link>
-                <Panier></Panier>
+               
+                <Profile></Profile>
                 <Link to="/inscription" className=" d-flex align-items-center gap-1">
                   <i className="ri-user-line"></i> Inscription
                 </Link>
+                <Panier></Panier>
                 <div> {/* ===============profile =========== */}</div>
               </div>
             </Col>

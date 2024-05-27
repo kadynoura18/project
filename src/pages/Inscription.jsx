@@ -5,21 +5,23 @@ import { Link } from 'react-router-dom'
 function Inscription() {
     return (
         
+
+        <div className='insss'>  <div className='entête'>
+        <h1>S'inscrire en tant que </h1>
+        </div>
 <div className='inscription'>
     
 
-<h1>S'inscrire en tant que </h1>
+
 <div className='inscription-down'>
-<Link to='/loginPrestataire' className="inscription-down-left">
+<Link to='/loginPrestataire' className="button-86">
  
-    <div className="inscription-down-left-write">Prestataire</div>
+    <div className="inscription-down-left-write"> Prestataire</div>
 </Link>
-<Link to='/loginClient' className="inscription-down-right">
+<Link to='/loginClient' className="button-86">
 <div className="inscription-down-right-write">Client</div>
 </Link>
 </div>
-<div className='inscription-up'>
-<Link to="/sign"  className='inscription-up-link'>Connexion</Link>
 </div>
 </div>
      

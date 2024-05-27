@@ -30,17 +30,17 @@ const CarItem = ({item}) => {
           ${item.price}.00 <span>/ Day</span>
         </h6>
 
-        <div className="car__item-info d-flex align-items-center justify-content-between mt-3 mb-4">
-         
-        </div>
-
-        <button className="reserver w-50 car__item-btn car__btn-rent" onClick={handleClick}>
+      
+        <h5>{item.intitué}</h5>
+       <div className="boot">
+       <button className="button-79" onClick={handleClick}>
           reserver
         </button>
 
-        <button className=" w-50 car__item-btn car__btn-details">
+        <button className="reserver details">
           <Link to={`/cars/${item.carName}`}>Details</Link>
         </button>
+       </div>
       </div>
     </div>
   </Col>
