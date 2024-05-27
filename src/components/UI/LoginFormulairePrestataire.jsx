@@ -176,15 +176,17 @@ const LoginFormulairePrestataire = () => {
                 onChange={(e) => setPhoto(e.target.files[0])}
               />
             </Form.Group>
-            <Form.Group controlId="formIntitule">
-              <FormLabel>Intitulé</FormLabel>
-              <Form.Control
-                type="text"
-                placeholder="Domaine d'activité"
-                value={intitule}
-                onChange={(e) => setIntitule(e.target.value)}
-              />
-            </Form.Group>
+            <select className="form-control form-control-lg">
+      <option>Organiateur de Mariage (Wedding Planner)</option>
+      <option>Organisateur de Baptême (Baptism Planner)</option>
+      <option>Organisateur d'anniversaire (Birth Planner)</option>
+      <option>Maquilleuse</option>
+      <option>Location de voiture</option>
+      <option>Service Traiteurs</option>
+      <option>Createur de souvenir</option>
+      <option>Tenue</option>
+      <option>Animation</option>
+      </select>
             <ReCAPTCHA
               ref={recaptchaRef}
               sitekey="6LfCXsMpAAAAAHRC4sxmBH_7kIT-iRGQi8Geb_KJ"
