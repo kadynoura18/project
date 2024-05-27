@@ -1,0 +1,260 @@
+.car__item {
+  border: 6px double #7c8a9736;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.car__item-info span i {
+  color: #f9a826;
+  font-size: 1.1rem;
+}
+.car__img {
+ 
+  height:300px;
+ 
+
+}
+.car__img img{
+  height: 100%;
+  width: 100%;
+}
+.car__img img{
+  height: 100%;
+  width: 100%;
+}
+.car__item-btn {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: #000d6b;
+  padding: 8px 0px;
+}
+
+.car__item-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.car__item-btn a:hover {
+  color: #fff;
+}
+.car__btn-details {
+  background: #f9a826;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.car__btn-rent {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.car__item-content h4 {
+  font-size: 1.8rem;
+}
+
+.car__item-content h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.reserver{
+ color:white;
+}
+.boot{
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.lorr{
+  background-color: #f9a826;
+}
+
+/* CSS */
+.details{
+  background-color: #f9a826;
+}
+.reserver  {
+  list-style-type: none;
+  background: #000d6b;
+  backface-visibility: hidden;
+  border-radius: .375rem;
+ 
+  
+ 
+  color: wheat;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: .875rem 1.125rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border: none;
+  
+}
+.reserver a{
+  text-decoration: none;
+  color: white;
+
+}
+
+.reserver:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.reserver:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.reserver:focus {
+  outline: 0 solid transparent;
+}
+
+.reserver:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.reserver:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.reserver:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.reserver:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+
+
+
+
+
+
+
+/* CSS */
+.button-79 {
+  backface-visibility: hidden;
+  background: darkorange;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-79:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.button-79:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-79:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-79:focus {
+  outline: 0 solid transparent;
+}
+
+.button-79:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-79:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-79:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+@media only screen and (max-width: 992px) {
+  .car__item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  .car__item h6 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .car__item-info {
+    flex-wrap: wrap;
+  }
+
+  .car__item-info span {
+    font-size: 0.8rem;
+    justify-content: space-between;
+  }
+
+  .car__item-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .car__item h4 {
+    font-size: 1rem;
+  }
+
+  .car__item h6 {
+    font-size: 0.9rem;
+  }
+
+  .car__item-info span {
+    font-size: 0.7rem;
+  }
+
+  .car__item-info span i {
+    font-size: 0.9rem;
+  }
+
+  .car__item-btn {
+    font-size: 0.8rem;
+  }
+}
