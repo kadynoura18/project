@@ -39,7 +39,7 @@ const AboutSection = ({ aboutClass }) => {
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Baptème
+                  <i class="ri-checkbox-circle-line"></i> Baptême 
                   
                 </p>
 

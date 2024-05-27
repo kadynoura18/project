@@ -15,7 +15,7 @@ const BecomeDriverSection = () => {
 
           <Col lg="6" md="6" sm="12">
             <h2 className="section__title become__driver-title">
-            tu as un ou des services mais pas de clients ? Alors rejoins nous
+            Tu as un ou des services mais pas de clients ? Alors rejoins nous.
             </h2>
 
             <Link  to='/loginPrestataire' className="btn become__driver-btn mt-4" style={{backgroundColor:'white'}}>

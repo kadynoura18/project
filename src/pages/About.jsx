@@ -32,18 +32,11 @@ const About = () => {
                 </h2>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                Chers Clients, Nous comprenons l'importance de chaque détail dans la réussite de votre événement. 
+                C'est pourquoi, Event Planner met à votre disposition une équipe d'organisation d'évènement engagée, rapide et professionnelle
+                pour garantir votre satisfaction et le succès de vos évènements ,vous permettant de profiter pleinement sans aucun souci.
                 </p>
-
-                <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
-                </p>
+                
 
                 <div className=" d-flex align-items-center gap-3 mt-4">
                   <span className="fs-4">
