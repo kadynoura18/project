@@ -9,14 +9,22 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const handleDashboardClick = () => {
-    const user = JSON.parse(localStorage.getItem('user'));
-    if (user.intitule) {
-      navigate('/dashboard-prestataire');
+    const userString = localStorage.getItem('user');
+    if (userString) {
+      const user = JSON.parse(userString);
+      console.log('User:', user); // Ajoute ce log
+      if (user.intitule) {
+        console.log('Navigating to dashboard-prestataire'); // Ajoute ce log
+        navigate('dashboard-prestataire');
+      } else {
+        console.log('Navigating to dashboard-client'); // Ajoute ce log
+        navigate('/dashboard-client');
+      }
     } else {
-      navigate('/dashboard-client');
+      console.log('No user found in localStorage'); // Ajoute ce log
+      navigate('/dashboard-client'); // Redirige par défaut
     }
   };
-
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('username');

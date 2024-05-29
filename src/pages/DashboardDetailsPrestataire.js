@@ -15,6 +15,7 @@ export default function DashboardDetailsPrestataire() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const { id } = useParams();
+  
 
   useEffect(() => {
     const loadPrestataire = async () => {
