@@ -11,10 +11,10 @@ import Contact from "../pages/Contact";
 //import ServicesList from "../components/UI/ServicesList";
 import ServicesListing from '../pages/SevicesListing'
 import Inscription from "../pages/Inscription";
-import LoginFormulaireClient from '../components/UI/LoginFormulaireClient'
-import LoginFormulairePrestataire from '../components/UI/LoginFormulairePrestataire'
+import SigninClient from "../components/UI/SigninClient";
+import SigninPrestataire from "../components/UI/SigninPrestataire";
 //import ClientLogin from "../pages/ClientLogin";
-import SignFormulaire from "../components/UI/SignFormulaire.jsx"
+import LoginFormulaire from "../components/UI/LoginFormulaire.jsx";
 import CodeConfirmation from "../pages/CodeConfirmation.jsx";
 import BirthDetails from "../pages/BirthDetails.jsx";
 import BirthListing from "../pages/BirthListing.jsx";
@@ -23,9 +23,10 @@ import BapthListing from "../pages/BapthListing.jsx";
 import Dashh from  '../pages/Dashh.jsx';
 import Accorde from '../pages/Accorde.jsx';
 import Issa from "../components/UI/issa.js";
-import DashboardDataPrestataire from "../assets/data/DashboardDataPrestataire.js";
-import DashboardClient from "../pages/DashboardPrestataire.jsx";
+import DashboardDetailsPrestataire from "../pages/DashboardDetailsPrestataire.js";
 import AjouterDeService from "../pages/AjouterDeService.js";
+import DashboardDetailsClient from "../pages/DashboardDetailsClient.js";
+import Profile from "../components/UI/Profile.jsx";
 const Routers = () => {
   return (
     <Routes>
@@ -45,10 +46,13 @@ const Routers = () => {
       <Route path="/Baptservice" element={<BapthListing />} /> 
       <Route path="/bapt/:slug" element={<BaptDetails />} />
 
+      <Route path="/profil" element={<Profile />} />
+
+
       <Route path="/inscription" element={<Inscription />} />
-      <Route path="/loginPrestataire" element={<LoginFormulairePrestataire />} />
-      <Route path="/loginClient" element={<LoginFormulaireClient />} />
-      <Route path="/sign" element={<SignFormulaire />} />
+      <Route path="/signinClient" element={<SigninClient />} />
+      <Route path="/signinPrestataire" element={<SigninPrestataire />} />
+      <Route path="/login" element={<LoginFormulaire />} />
       <Route path="code-confirmation" element={<CodeConfirmation />}/>
       <Route path='/issa'  element={ <Dashh/> } />
       <Route path="/blogs" element={<Blog />} />
@@ -58,7 +62,9 @@ const Routers = () => {
       <Route path='/MesReservations'  element={ <Accorde/> } />
       <Route path='/add'  element={ <AjouterDeService/> } />
    
-      <Route path='/prestataire'  element={ <DashboardClient/> } />
+      <Route path='/dashboard-prestataire'  element={ <DashboardDetailsPrestataire/> } />
+      <Route path='/dashboard-client'  element={ <DashboardDetailsClient/> } />
+
       
 
       <Route path="*" element={<NotFound />} />

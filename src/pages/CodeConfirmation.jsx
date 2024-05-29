@@ -1,52 +1,43 @@
-import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import React from 'react';
-import { useState } from 'react';
-
-import { Navigate, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Form, Button, InputGroup, Row, Col, Navbar } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function CodeConfirmation() {
-    const [code, setCode] = useState('');
-    
-    const [isSubmitted, setIsSubmitted] = useState(false);
+  const [code, setCode] = useState('');
+  const navigate = useNavigate();
 
-  
-    const onSubmit = (e) => {
-      e.preventDefault();
-      if (!code ) {
-        alert('Tous les champs doivent être remplis');
-        return;
-      }
-      axios.post('http://localhost:8080/activation', {
-        code: code,
-      })
-     .then(function (response) {
-        console.log(response);
-        setIsSubmitted(true); // mettre à jour l'état lorsque la requête est réussie
-      })
-     .catch(function (error) {
-        console.log(error);
-        if (error.response) {
-          alert(error.response.data.message); // affiche le message d'erreur renvoyé par l'API
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    if (!code) {
+      alert('Tous les champs doivent être remplis');
+      return;
+    }
+    try {
+      // Faire une requête axios avec le code
+      const response = await axios.post('http://localhost:8080/activation', { code }, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
         }
       });
-    };
-  
-    return (
-<center style={{ display: 'flex', alignItems: 'center', paddingTop: '30px', height: '100vh',marginLeft: '250px' }}>
+      // Si la requête réussit, rediriger l'utilisateur vers la page de connexion
+      navigate(`/login/home/zakaria/Bureau/front-end bien/src/pages/DashboardDetailsPrestataire.js`);
+    } catch (error) {
+      console.error('Erreur lors de la soumission du formulaire:', error);
+      if (error.response) {
+        alert(error.response.data.message); // Afficher le message d'erreur renvoyé par l'API
+      }
+    }
+  };
+
+  return (
+    <center style={{ display: 'flex', alignItems: 'center', paddingTop: '30px', height: '100vh', marginLeft: '250px' }}>
       <Navbar className="bg-body-tertiary justify-content-between">
         <Form inline>
-            <h2>Votre code de confirmation ✅ ✅</h2>
-        <h6>Le code que vous avez reçu est valable pour 5 minutes </h6>
-
+          <h2>Votre code de confirmation ✅ ✅</h2>
+          <h6>Le code que vous avez reçu est valable pour 5 minutes </h6>
           <InputGroup>
-          
-            <InputGroup.Text id="basic-addon1">@ </InputGroup.Text>
+            <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
             <Form.Control
               placeholder="Veullez entrer le code"
               aria-label="Username"
@@ -56,19 +47,18 @@ function CodeConfirmation() {
             />
           </InputGroup>
         </Form>
-        <Form inline>
+        <Form inline onSubmit={onSubmit}>
           <Row>
-             
             <Col xs="auto">
-              <Button type="submit" onClick={onSubmit}>
+              <Button type="submit">
                 Envoyer
               </Button>
             </Col>
           </Row>
         </Form>
       </Navbar>
-      </center>
-    );
-  }
-  
-  export default CodeConfirmation;
+    </center>
+  );
+}
+
+export default CodeConfirmation;

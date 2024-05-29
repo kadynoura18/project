@@ -14,11 +14,11 @@ function Inscription() {
 
 
 <div className='inscription-down'>
-<Link to='/loginPrestataire' className="button-86">
+<Link to='/signinPrestataire' className="button-86">
  
     <div className="inscription-down-left-write"> Prestataire</div>
 </Link>
-<Link to='/loginClient' className="button-86">
+<Link to='/signinClient' className="button-86">
 <div className="inscription-down-right-write">Client</div>
 </Link>
 </div>

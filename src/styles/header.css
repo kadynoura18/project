@@ -210,3 +210,8 @@
     display: block;
   }
 }
+
+.dashboard-button {
+  background-color: #01016b;
+  color: white;
+}
