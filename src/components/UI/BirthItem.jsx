@@ -31,14 +31,14 @@ const dispatch=useDispatch()
         </h6>
 
       
-        <h5>{item.intitué}</h5>
+        <h5>{item.intitulé}</h5>
        <div className="boot">
        <button className="button-79" onClick={handleClick}>
           reserver
         </button>
 
         <button className="reserver details">
-          <Link to={`/cars/${item.carName}`}>Details</Link>
+          <Link to={`/birth/${item.carName}`}>Details</Link>
         </button>
        </div>
       </div>

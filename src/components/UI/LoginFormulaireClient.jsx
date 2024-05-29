@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaGoogle, FaApple, FaEye, FaEyeSlash } from 'react-icons/fa'; 
 
 const LoginFormulaireClient = () => {
+  const [isloader,setIloader]=useState(false)
   const [nom, setNom] = useState('');
   const [prenom, setPrenom] = useState('');
   const [email, setEmail] = useState('');

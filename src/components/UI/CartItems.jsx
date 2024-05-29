@@ -1,10 +1,14 @@
+import {ShoppingCartAction } from "../../store/Shopping-cart-slice";
 import React from 'react'
 import "../../styles/cart.css";
+import { useDispatch } from 'react-redux';
 
 
 function CartItems({item}) {
-   
-
+  const dispatch=useDispatch() ;
+const handleRemoveItem=()=>{
+    dispatch(ShoppingCartAction.removeItemToCart(item.id))
+}
     return (
         <div className='cart-item'>
            <div className="left-partt">
@@ -18,7 +22,7 @@ function CartItems({item}) {
             <p>
                 {item.quantity} x {item.price}
             </p>
-            <button>retirer du pannier</button>
+            <button  onClick={handleRemoveItem} >retirer du pannier</button>
             </div>
            </div>
            <div className="right-partt">

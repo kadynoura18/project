@@ -34,6 +34,9 @@ const ShoppingCartSlice=createSlice({
                 existingProductItem.quantity++;
             }
           
+        },
+        removeItemToCart(state,action){
+            state.items=state.items.filter(item=>item.id !== action.payload)
         }
     }
 })
