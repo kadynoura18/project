@@ -9,22 +9,30 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const handleDashboardClick = () => {
+    const token = localStorage.getItem('token');
     const userString = localStorage.getItem('user');
-    if (userString) {
-      const user = JSON.parse(userString);
-      console.log('User:', user); // Ajoute ce log
-      if (user.intitule) {
-        console.log('Navigating to dashboard-prestataire'); // Ajoute ce log
-        navigate('dashboard-prestataire');
-      } else {
-        console.log('Navigating to dashboard-client'); // Ajoute ce log
-        navigate('/dashboard-client');
+    
+    if (token && userString) {
+      try {
+        const user = JSON.parse(userString);
+        console.log('User:', user); // Ajoute ce log
+        if (user.intitule) {
+          console.log('Navigating to dashboard-prestataire'); // Ajoute ce log
+          navigate('dashboard-prestataire');
+        } else {
+          console.log('Navigating to dashboard-client'); // Ajoute ce log
+          navigate('/dashboard-client');
+        }
+      } catch (error) {
+        console.error('Error parsing user JSON:', error);
+        navigate('/login'); // Redirige vers la page de connexion en cas d'erreur
       }
     } else {
-      console.log('No user found in localStorage'); // Ajoute ce log
-      navigate('/dashboard-client'); // Redirige par défaut
+      console.log('No user or token found in localStorage'); // Ajoute ce log
+      navigate('/login'); // Redirige vers la page de connexion
     }
   };
+
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('username');

@@ -22,13 +22,19 @@ import BaptDetails from "../pages/BaptDetails.jsx";
 import BapthListing from "../pages/BapthListing.jsx";
 import Dashh from  '../pages/Dashh.jsx';
 import Accorde from '../pages/Accorde.jsx';
-import Issa from "../components/UI/issa.js";
+//import Issa from "../components/UI/issa.js";
 import DashboardDetailsPrestataire from "../pages/DashboardDetailsPrestataire.js";
 import AjouterDeService from "../pages/AjouterDeService.js";
 import DashboardDetailsClient from "../pages/DashboardDetailsClient.js";
 import Profile from "../components/UI/Profile.jsx";
+import { LoadingProvider } from "../contexts/LoadingContext.jsx";
+import NewPassword from "../pages/NewPassword.jsx";
+import ResetPassword from "../pages/ResetPassword.jsx";
+import { AuthProvider } from "../contexts/AuthContext.js";
 const Routers = () => {
   return (
+    <AuthProvider>
+    <LoadingProvider>
     <Routes>
       
       <Route path="/" element={<Navigate to="/home" />} />
@@ -65,10 +71,15 @@ const Routers = () => {
       <Route path='/dashboard-prestataire'  element={ <DashboardDetailsPrestataire/> } />
       <Route path='/dashboard-client'  element={ <DashboardDetailsClient/> } />
 
+      <Route path="/reset-password" element ={<ResetPassword/>}/>
+      <Route path="/new-password" element = {<NewPassword/>} /> 
+
       
 
       <Route path="*" element={<NotFound />} />
     </Routes>
+    </LoadingProvider>
+    </AuthProvider>
   );
 };
 

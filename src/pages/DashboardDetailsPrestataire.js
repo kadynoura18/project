@@ -1,31 +1,32 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/DashboardDetails.css';
 import { Link } from 'react-router-dom';
 import { CiMail } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
 import axios from 'axios';
 import { IoLocationOutline } from "react-icons/io5";
-// Très bien
 import { useParams } from "react-router-dom";
-import { PrestataireContext } from '../contexts/PrestataireContext';
-
 
 export default function DashboardDetailsPrestataire() {
-  const { prestataireId } = useContext(PrestataireContext);
   const [prestataire, setPrestataire] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const { id } = useParams();
-  
 
   useEffect(() => {
     const loadPrestataire = async () => {
       try {
         setIsLoading(true);
-        console.log("je me nomme ",prestataireId);
-        const result = await axios.get(`http://localhost:8080/api/v1/rest/prestataires/${prestataireId}`);
-        console.log('mon result',result.data);
-        setPrestataire(result.data);
+        const userString = localStorage.getItem('user');
+        if (userString) {
+          const user = JSON.parse(userString);
+          console.log("Utilisateur connecté:", user);
+          const result = await axios.get(`http://localhost:8080/api/v1/rest/prestataires/${user.id}`);
+          console.log('Détails du prestataire:', result.data);
+          setPrestataire(result.data);
+        } else {
+          throw new Error("Utilisateur non trouvé dans le localStorage");
+        }
       } catch (err) {
         setError(err);
       } finally {
@@ -33,10 +34,8 @@ export default function DashboardDetailsPrestataire() {
       }
     };
 
-    if (prestataireId) {
-      loadPrestataire();
-    }
-  }, [prestataireId, id]);
+    loadPrestataire();
+  }, [id]);
 
   if (isLoading) {
     return <div>Chargement...</div>;
@@ -47,20 +46,20 @@ export default function DashboardDetailsPrestataire() {
   }
 
   if (!prestataire) {
-    return <div>Aucune information renseigné.</div>;
+    return <div>Aucune information renseignée.</div>;
   }
 
   return (
     <div className='DashboardDetails'>
       <div className="hauts">
-        <Link className="upi-righht prestata" to='/service'>liste des services</Link>
+        <Link className="upi-righht prestata" to='/service'>Liste des services</Link>
         <div className="Information upi">
           <div className="upi-left">
             <div className="noms"><h1>{prestataire.nom}</h1></div>
             <div className="prenoms"><h2>{prestataire.prenom}</h2></div>
           </div>
           <div className="photo">
-            <img src={prestataire.photoPath} alt="" />
+          <img src={`http://localhost:8080/uploads/${prestataire.photoPath}`} alt="Prestataire" />
           </div>
         </div>
       </div>
@@ -84,7 +83,7 @@ export default function DashboardDetailsPrestataire() {
             <div className='telephones'>
               <div className='uppi'>
                 <BsTelephone style={{ fontSize: '23px', color: 'orange' }} />
-                <h5>Telephone</h5>
+                <h5>Téléphone</h5>
               </div>
               <span>{prestataire.numero || 'Non renseigné'}</span>
             </div>

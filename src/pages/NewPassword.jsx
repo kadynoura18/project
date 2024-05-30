@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner'; // Importation du spinner
+import '../styles/GlobalSpinner.css'; // Importation des styles du spinner
 
 function NewPassword() {
   const [email, setEmail] = useState('');
@@ -77,7 +78,13 @@ function NewPassword() {
         {error && <div className="alert alert-danger">{error}</div>}
         {success && <div className="alert alert-success">{success}</div>}
         <button type="submit" className="btn btn-primary mt-3" disabled={isLoading}>
-          {isLoading ? <TailSpin height="20" width="20" color="#fff" /> : 'Mettre à jour'}
+          {isLoading ? (
+            <div className="spinner-container">
+              <TailSpin height="20" width="20" color="#fff" />
+            </div>
+          ) : (
+            'Mettre à jour'
+          )}
         </button>
       </form>
     </div>

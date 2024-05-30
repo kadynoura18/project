@@ -36,13 +36,15 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const menuRef = useRef(null);
+  const userString = localStorage.getItem('user');
+  const user = userString ? JSON.parse(userString) : null;
 
-  const username = localStorage.getItem('username');
   const token = localStorage.getItem('token');
 
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('username');
+    localStorage.removeItem('user');
     navigate('/login');
   };
 
@@ -67,7 +69,14 @@ const Header = () => {
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
                 {token ? (
                   <>
-                    <span>Bienvenue, {username}</span>
+                    <span>Bienvenue, {user?.prenom}</span>
+                    {user?.photoPath && (
+                      <img
+                        src={`http://localhost:8080/uploads/${user.photoPath}`}
+                        alt="User"
+                        style={{ width: '40px', height: '40px', borderRadius: '50%' }}
+                      />
+                    )}
                     <Profile />
                   </>
                 ) : (
@@ -112,7 +121,6 @@ const Header = () => {
                 </div>
               </div>
             </Col>
-
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
                 <span>
