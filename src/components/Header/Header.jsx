@@ -19,13 +19,14 @@ const navLinks = [
     display: "Home",
   },
   {
-    path: "/about",
-    display: "About",
-  },
-  {
     path: "/service",
     display: "service",
   },
+  {
+    path: "/about",
+    display: "About",
+  },
+
 
   {
     path: "/blogs",
