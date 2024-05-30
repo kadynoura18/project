@@ -15,7 +15,7 @@ const BlogDetails = () => {
   const blog = blogData.find((blog) => blog.title === slug);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(1, 1);
   }, [blog]);
 
   return (

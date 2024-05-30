@@ -14,7 +14,7 @@ const CarListing = () => {
   
   return (
     <Helmet title="issa">
-      <CommonSection title="liste des services de mariage" />
+      <CommonSection title="liste des organisateurs de  services " />
       {canIViewCart && <Cart/> }
       <section>
         <Container>

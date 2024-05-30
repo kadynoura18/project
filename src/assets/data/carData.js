@@ -12,11 +12,11 @@ const carData = [
   {
     id: 1,
     intitulé: "organisateur de bapt",
-    rating: 112,
+    numero: 112,
     carName: " Malibu",
     imgUrl: img01,
    
-    price: 50,
+    price: 5000000,
     
     description:
       " Dolor labore iabore invidunt voluptua, amet",
@@ -25,11 +25,11 @@ const carData = [
   {
     id: 2,
     intitulé: "organisateur de mariage",
-    rating: 102,
+    numero: 102,
     carName: "Carolle",
     imgUrl: img02,
    
-    price: 50,
+    price: 50870088,
    
     description:
       " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
@@ -38,11 +38,11 @@ const carData = [
   {
     id: 3,
     intitulé: "organisateur d'anniversaire ",
-    rating: 132,
+    numero: 132,
     carName: "kevina",
     imgUrl: img03,
  
-    price: 65,
+    price: 6509000,
     
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -54,11 +54,11 @@ const carData = [
   {
     id: 4,
     intitulé: "organisateur de Baptême",
-    rating: 102,
+    numero: 102,
     carName: " Merciela",
     imgUrl: img04,
   
-    price: 70,
+    price: 7000000,
     
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -70,11 +70,11 @@ const carData = [
   {
     id: 5,
     intitulé: "organisateur de mariage",
-    rating: 94,
+    numero: 9409753,
     carName: " Camry",
     imgUrl: img05,
   
-    price: 45,
+    price: 4509764,
 
     gps: "GPS Navigation",
     seatType: "Heated seats",
