@@ -17,7 +17,7 @@
 }
 
 .one{
-    background-image: url('../assets/all-images/deux-bagues-or-sont-assises-cote-rose-rouge_254939-889.jpg');
+    background-image: url('../assets/all-images/IMG-20240527-WA0029.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
 }
 .three{
-    background-image: url('../assets/all-images/bapt1.jpeg');
+    background-image: url('../assets/all-images/IMG-20240527-WA0025.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,3 +54,6 @@
     font-size: 40px;
 }
  
+.one :hover{
+background-color: red;
+}

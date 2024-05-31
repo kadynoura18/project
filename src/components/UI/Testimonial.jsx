@@ -41,16 +41,16 @@ const Testimonial = () => {
 
   return (
     <Slider {...settings}>
-      <div className="testimonial py-4 px-3">
+      <div className="testimonial ">
         <p className="section__description">
-        <p className="section__description">
+        <p className="section__description comment">
         Mon expérience avec l' application était  satisfaisante.Les prix sint abordable
         et les prestataire accueillants et bienveillants.         </p>
           
         </p>
 
-        <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava01} alt="" className="w-25 h-25 rounded-2"/>
+        <div className="tofwork  mt-3 d-flex align-items-center gap-4">
+          <img src={ava02} alt="" className="photo w-25 h-25 rounded-2"/>
        
 
           <div>  
@@ -60,8 +60,8 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="testimonial py-4 px-3">
-        <p className="section__description">
+      <div className="testimonial ">
+        <p className="section__description comment">
         Mon expérience avec l' application était globalement satisfaisante. L'application
          offrais plusieurs fonctionnalités utiles pour mon evenement, 
            les notifications en temps réel. Cependant, j'ai rencontré 
@@ -69,7 +69,7 @@ const Testimonial = () => {
           mon expérience. Malgré ces inconvénients, l'application a contribué à faciliter mon l'événement. ?
         </p>
  
-        <div className="mt-3 d-flex align-items-center gap-4">
+        <div className="tofwork mt-3 d-flex align-items-center gap-4">
           <img src={ava02} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
@@ -79,37 +79,37 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="testimonial py-4 px-3">
-        <p className="section__description">
+      <div className="testimonial ">
+        <p className="section__description comment">
           j'ai tester l appkication
           lorsque de devais organiser l anniversaire supprise de mon petit ami je me suis laisse guide par votre wedingplanner.
            l anniversaire etait spectaculaire j etait trop satisfaite,
           mon petit ami aussi je vous remercie eventplaner une fois eventplaner toujour?
         </p>
 
-        <div className="mt-3 d-flex align-items-center gap-4">
+        <div className=" tofwork  mt-3 d-flex align-items-center gap-4">
           <img src={ava03} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
             <h6 className="mb-0 mt-3"> KLA DIO YVE</h6>
-            <p className="section__description">secretaire</p>
+            <p className="section__description ">secretaire</p>
           </div>
         </div>
       </div>
 
-      <div className="testimonial py-4 px-3">
-        <p className="section__description">
+      <div className="testimonial">
+        <p className="section__description comment">
           Apres avoire utilse votre service je suis tres satisfaite vos prestataire en plus d'etre performant,acceuillant et respectueux
           Avec un qualite de prix favorable votre application ma permis de realise un mariage de reve pour ma fille .je reviendrais lorsque j'aurais encore un evenement je vous le conseil eventplaner
           ?
         </p>
 
-        <div className="mt-3 d-flex align-items-center gap-4">
+        <div className=" tofwork mt-3 d-flex align-items-center gap-4">
           <img src={ava04} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
             <h6 className="mb-0 mt-3"> Diaith Urielle</h6>
-            <p className="section__description">Chef d'entreprise</p>
+            <p className="section__description ">Chef d'entreprise</p>
           </div>
         </div>
       </div>

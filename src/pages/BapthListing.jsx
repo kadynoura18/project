@@ -6,32 +6,26 @@ import BapthItem from "../components/UI/BapthItem";
 import bapthData from "../assets/data/bapthData ";
 import Cart from "../components/UI/Cart";
 import { useSelector } from "react-redux";
-
+import search from "../components/UI/Search";
+import { useState } from "react";
 const BapthListing = () => {
+  const [search,setSearch]=useState("")
   const canIViewCart=useSelector((state)=> state.shoppingCart.isCartVisible)
   return (
     <Helmet title="Birth">
    
-      <CommonSection title="liste des services de baptème" />
+      <CommonSection title="Liste des autres  services " />
      {canIViewCart && <Cart/> }
       <section>
         <Container>
           <Row>
             <Col lg="12">
-              <div className=" d-flex align-items-center gap-3 mb-5">
-                <span className=" d-flex align-items-center gap-2">
-                  <i className="ri-sort-asc"></i> Sort By
-                </span>
-
-                <select>
-                  <option>Select</option>
-                  <option value="low">Low to High</option>
-                  <option value="high">High to Low</option>
-                </select>
-              </div>
+            <input type="text" onChange={(e)=>{setSearch(e.target.value)}}  className="searchh" placeholder="recherche à partir des poste"/>
             </Col>
 
-            {bapthData.map((item) => (
+            {bapthData.filter((item)=>{
+              return search.toLocaleLowerCase()==="" ? item :item.intitulé.toLocaleLowerCase().includes(search)
+            }).map((item) => (
               <BapthItem item={item} key={item.id} />
             ))}
           </Row>

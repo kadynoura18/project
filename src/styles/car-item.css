@@ -1,8 +1,8 @@
 .car__item {
-  border: 3px solid #7c8a9736;
+  border: 6px double #7c8a9736;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid red;
+
 }
 
 .car__item-info span i {
@@ -12,7 +12,7 @@
 .car__img {
  
   height:300px;
-  border: 3px solid blue;
+ 
 
 }
 .car__img img{
@@ -57,6 +57,166 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.reserver{
+ color:white;
+}
+.boot{
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.lorr{
+  background-color: #f9a826;
+}
+
+/* CSS */
+.details{
+  background-color: #f9a826;
+}
+.reserver  {
+  list-style-type: none;
+  background: #000d6b;
+  backface-visibility: hidden;
+  border-radius: .375rem;
+ 
+  
+ 
+  color: wheat;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: .875rem 1.125rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border: none;
+  
+}
+.reserver a{
+  text-decoration: none;
+  color: white;
+
+}
+
+.reserver:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.reserver:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.reserver:focus {
+  outline: 0 solid transparent;
+}
+
+.reserver:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.reserver:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.reserver:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.reserver:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+.searchh{
+   border: red solid 4px ;
+   width: 100%;
+   padding: 10px;
+   border-radius: 10px;
+   border-color: #000d6b;
+}
+
+
+
+
+
+
+/* CSS */
+.button-79 {
+  backface-visibility: hidden;
+  background: darkorange;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-79:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.button-79:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-79:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-79:focus {
+  outline: 0 solid transparent;
+}
+
+.button-79:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-79:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-79:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
 @media only screen and (max-width: 992px) {
   .car__item h4 {
     font-size: 1.1rem;
