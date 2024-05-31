@@ -142,7 +142,13 @@
   transform: translateY(.125rem);
 }
 
-
+.searchh{
+   border: red solid 4px ;
+   width: 100%;
+   padding: 10px;
+   border-radius: 10px;
+   border-color: #000d6b;
+}
 
 
 

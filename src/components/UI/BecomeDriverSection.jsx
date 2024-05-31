@@ -3,11 +3,16 @@ import "../../styles/become-driver.css";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import driverImg from "../../assets/all-images/newPres.jpg";
-
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const BecomeDriverSection = () => {
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
-    <section className="become__driver">
-      <Container>
+    <section className="become__driver"   >
+      <Container data-aos="zoom-in-up" data-aos-duration="3000" >
         <Row>
           <Col lg="6" md="6" sm="12" className="become__driver-img">
             <img src={driverImg} alt="" className="w-100" />

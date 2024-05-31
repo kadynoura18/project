@@ -6,31 +6,36 @@ import blogData from "../assets/data/blogData.js";
 import Helmet from "../components/Helmet/Helmet";
 import { Link } from "react-router-dom";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
 import commentImg from "../assets/all-images/slider-img/bapt1.jpeg";
 
 import "../styles/blog-details.css";
 
 const BlogDetails = () => {
+  useEffect(()=>{
+    Aos.init()
+  },[])
   const { slug } = useParams();
   const blog = blogData.find((blog) => blog.title === slug);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(1, 1);
   }, [blog]);
 
   return (
     <Helmet title={blog.title}>
       <section>
-        <Container>
+        <Container >
           <Row>
             <Col lg="8" md="8">
-              <div className="blog__details">
+              <div className="blog__details"  data-aos="zoom-in-up" data-aos-duration="3000">
                 <img src={blog.imgUrl} alt="" className="w-100" />
                 <h2 className="section__title mt-4">{blog.title}</h2>
 
                 <div className="blog__publisher d-flex align-items-center gap-4 mb-4">
                   <span className="blog__author">
-                    <i class="ri-user-line"></i> {blog.author}
+                    <i className="ri-user-line"></i> {blog.author}
                   </span>
 
                   <span className=" d-flex align-items-center gap-1 section__description">
@@ -38,7 +43,7 @@ const BlogDetails = () => {
                   </span>
 
                   <span className=" d-flex align-items-center gap-1 section__description">
-                    <i class="ri-time-line"></i> {blog.time}
+                    <i className="ri-time-line"></i> {blog.time}
                   </span>
                 </div>
 

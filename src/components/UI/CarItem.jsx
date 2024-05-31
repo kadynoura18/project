@@ -3,10 +3,10 @@ import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../../styles/car-item.css";
 import { useDispatch } from "react-redux";
-import { shppingCartActions } from "../../store/Shopping-cart-slice";
-
-
 import { ShoppingCartAction } from "../../store/Shopping-cart-slice";
+
+
+
 
 const CarItem = ({item}) => {
  
@@ -27,11 +27,11 @@ const CarItem = ({item}) => {
       <div className="car__item-content mt-4">
         <h4 className="section__title text-center">{item.carName}</h4>
         <h6 className="rent__price text-center mt-">
-          ${item.price}.00 <span>/ Day</span>
+          {item.price}FCFA <span>/ Jour</span>
         </h6>
 
       
-        <h5>{item.intitué}</h5>
+        <h5>{item.intitulé}</h5>
        <div className="boot">
        <button className="button-79" onClick={handleClick}>
           reserver

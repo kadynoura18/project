@@ -16,7 +16,7 @@ function SevicesListing() {
         <div className='Listing'>
         <Link to="/Mariageservice" className="listing-box one"></Link>
         
-        <Link to='/Birthservice' className="listing-box three"></Link>
+        <Link to='/Baptservice' className="listing-box three"></Link>
         </div>
         
         <Testimonial></Testimonial>
