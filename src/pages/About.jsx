@@ -32,18 +32,12 @@ const About = () => {
                 </h2>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                Nous comprenons l'importance de chaque détail dans la réussite de votre événement. C'est pourquoi nous nous engageons à fournir une organisation rapide et sécurisée, vous permettant de profiter pleinement de votre événement sans aucun souci En choisissant notre service, vous faites le choix de la tranquillité d'esprit. Nous nous engageons à vous offrir une organisation rapide, sécurisée et sans faille, vous permettant de vous concentrer sur ce qui compte vraiment : créer des souvenirs inoubliables avec vos invités.
+
+Merci de votre confiance. Nous sommes impatients de collaborer avec vous pour faire de votre événement un moment exceptionnel.
                 </p>
 
-                <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
-                </p>
+
 
                 <div className=" d-flex align-items-center gap-3 mt-4">
                   <span className="fs-4">
