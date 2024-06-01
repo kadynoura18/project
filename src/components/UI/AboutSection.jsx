@@ -21,7 +21,8 @@ const AboutSection = ({ aboutClass }) => {
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <div data-aos="fade-right"   data-aos-duration="3000"  className="about__section-content">
+            <div data-aos="fade-right"   data-aos-duration="3
+            000"  className="about__section-content">
               <h4 className="section__subtitle">À propos de nous</h4>
               <h2 className="section__title">Bienvenue au service d'organisation de cérémonie de Envent Planer</h2>
               <p data-aos-duration="3000" data-aos="fade-right" className="section__description">

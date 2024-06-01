@@ -7,6 +7,9 @@
     
 
 }
+.downn{
+    text-align: center;
+}
 
 .listing-box{
    
@@ -21,6 +24,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 170px  0px 0px 300px ;
 }
 .two{
     background-image: url('../assets/all-images/anni1.jpg');
@@ -57,3 +61,25 @@
 .one :hover{
 background-color: red;
 }
+
+.organisateur{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+}
+.organisateur h3{
+    cursor: pointer;
+    color: darkblue;
+    font-weight: bolder;
+}
+.wedd :hover{
+    color: orange;
+}
+
+.other :hover{
+    color:orange;
+}
+

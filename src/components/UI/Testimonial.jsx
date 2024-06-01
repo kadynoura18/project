@@ -45,17 +45,17 @@ const Testimonial = () => {
         <p className="section__description">
         <p className="section__description comment">
         Mon expérience avec l' application était  satisfaisante.Les prix etaient abordable
-        et les prestataires accueillants et bienveillants. la ceremonie c'est bien passee mes invites etaient juste emerveiller par la qualite du service surtout le srvice traiteur .je remercie eventplanner et je vous le conseil        </p>
+        et les prestataires accueillants et bienveillants. la ceremonie c'est bien passee mes invites etaient juste emerveiller par la qualite du service surtout le srvice traiteur .je remercie eventplanner et je vous le conseil  pour les événements .       </p>
           
         </p>
 
         <div className="tofwork  mt-3 d-flex align-items-center gap-4">
-          <img src={ava02} alt="" className="photo w-25 h-25 rounded-2"/>
+          <img src={ava02} alt="" className=" w-25 h-25 rounded-2"/>
        
 
           <div>  
             <h6 className="mb-0 mt-3">lorene</h6>
-            <p className="section__description">Informaticien</p>
+            <p className="section__description">Informaticienne</p>
           </div>
         </div>
       </div>
