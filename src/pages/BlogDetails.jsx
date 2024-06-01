@@ -63,9 +63,7 @@ const BlogDetails = () => {
                     <h6 className=" fw-bold">David Visa</h6>
                     <p className="section__description mb-0">14 July, 2022</p>
                     <p className="section__description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eos nobis totam eius laborum molestias itaque minima
-                      distinctio, quae velit tempore!
+                    Nous avons récemment fait appel à l'un de vos prestataires pour l'organisation de notre bapteme, et nous ne pourrions pas être plus satisfaits du résultat. Dès notre première rencontre, nous avons été impressionnés par son professionnalisme, sa créativité et son attention aux détails.
                     </p>
 
                     <span className="replay d-flex align-items-center gap-1">

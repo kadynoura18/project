@@ -44,8 +44,8 @@ const Testimonial = () => {
       <div className="testimonial ">
         <p className="section__description">
         <p className="section__description comment">
-        Mon expérience avec l' application était  satisfaisante.Les prix sint abordable
-        et les prestataire accueillants et bienveillants.         </p>
+        Mon expérience avec l' application était  satisfaisante.Les prix etaient abordable
+        et les prestataires accueillants et bienveillants. la ceremonie c'est bien passee mes invites etaient juste emerveiller par la qualite du service surtout le srvice traiteur .je remercie eventplanner et je vous le conseil        </p>
           
         </p>
 
@@ -65,8 +65,8 @@ const Testimonial = () => {
         Mon expérience avec l' application était globalement satisfaisante. L'application
          offrais plusieurs fonctionnalités utiles pour mon evenement, 
            les notifications en temps réel. Cependant, j'ai rencontré 
-         quelques problèmes de lenteur et  pendant son utilisation, ce qui a affecté légèremenT
-          mon expérience. Malgré ces inconvénients, l'application a contribué à faciliter mon l'événement. ?
+         quelques problèmes de lenteur  pendant son utilisation, ce qui a affecté légèremenT
+          mon expérience. 
         </p>
  
         <div className="tofwork mt-3 d-flex align-items-center gap-4">
@@ -84,7 +84,7 @@ const Testimonial = () => {
           j'ai tester l appkication
           lorsque de devais organiser l anniversaire supprise de mon petit ami je me suis laisse guide par votre wedingplanner.
            l anniversaire etait spectaculaire j etait trop satisfaite,
-          mon petit ami aussi je vous remercie eventplaner une fois eventplaner toujour?
+          mon petit ami aussi je vous remercie eventplaner une fois eventplaner toujour.je vous rassure que le service est de qualite
         </p>
 
         <div className=" tofwork  mt-3 d-flex align-items-center gap-4">
