@@ -1,7 +1,7 @@
 import React from 'react'
 import { UseSelector, useSelector } from 'react-redux'
 import CartItems from './CartItems'
-interface Props {}
+
 
 function Cart(props: Props) {
     const items= useSelector ((state)=> state.shoppingCart.items)
@@ -9,6 +9,7 @@ function Cart(props: Props) {
     if (items.length>0) {
         content =(
             <div className='cart-items'>
+                <h1>mes élements</h1>
                 {items.map((item)=>(
                     <CartItems key={item.id} item={item}/>
                 ))}

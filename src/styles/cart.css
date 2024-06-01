@@ -3,18 +3,18 @@
     box-sizing: border-box;
 }
 .cart-item{
-    border: 2px solid red;
-    display: flex;
+  
+      display: flex;
     justify-content: space-between;
 }
 .left-partt{
-    border: 3px solid blue;
+   
     width: 60%;
     justify-content: space-around;
     display: flex;
 }
 .right-partt{
-    border: 3px solid green;
+   
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     padding-top: 60px;
 }
 .itemImage{
-    border: 3px solid orange;
+ 
     height: 200px;
     width: 300px;
 
@@ -33,13 +33,13 @@
     width: 100%;
 }
 .selector{
-    border: 1px solid black;
+   
     width: 90%;
     display: flex;
     justify-content: space-between;
 }
 .prixx{
-    border: 5px solid red;
+   
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,7 +48,7 @@
     font-weight: bolder;
 }
 .Accept{
-    border: 2px solid red;
+   
     width: 40%;
     
 }
