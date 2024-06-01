@@ -44,12 +44,12 @@ const AboutSection = ({ aboutClass }) => {
 
               <div className="about__section-item d-flex align-items-center">
                 <p data-aos="fade-right"   className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line" data-aos-duration="3000"></i> Baptème
+                  <i className="ri-checkbox-circle-line" data-aos-duration="3000"></i> Baptème
                   
                 </p>
 
                 <p data-aos="zoom-in"  data-aos-duration="3000" className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Autres
+                  <i className="ri-checkbox-circle-line"></i> Autres
                 </p>
               </div>
             </div>

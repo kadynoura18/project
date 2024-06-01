@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import logo from "../../assets/all-images/cars-img/logo.png";
+import logo from "../../assets/all-images/logoe.jpg";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";

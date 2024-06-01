@@ -1,6 +1,8 @@
+
+
 .header__top {
   
-  padding: 10px 0px;
+  padding: 0px 0px;
   background: #ad062d;
   color: #fff;
  
@@ -43,7 +45,7 @@
 /* ============ header middle style =========== */
 
 .header__middle {
-  padding: 20px 0px;
+  padding: 4px 0px;
 }
 
 .logo h1 a span {
@@ -105,8 +107,9 @@
 /* ================ main navbar styles =========== */
 
 .main__navbar {
-  padding: 15px 0px;
+  padding: 10px 0px;
   background: #000d6b;
+ 
 
   
  
